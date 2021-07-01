@@ -1,0 +1,13 @@
+OBJECTS = 20171640.o
+SRC = 20171640.c
+
+CC = gcc
+CFLAGS = -g -Wall -W
+
+TARGET = 20171640.out
+
+$(TARGET) : $(OBJECTS)
+	$(CC) -o $(TARGET) $(OBJECTS) $(CFLAGS)
+
+clean:
+	rm $(OBJECTS) $(TARGET)
